@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    padding: 0px;
+    margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+.wrapper{
+    height: 100%;
+    width: 80%;
+    /* background-color: darkgray; */
+}
+h1{
+    font-size: 36px;
+}
+p{
+    font-size: 20px;
+}
+
+
+header{
+    height: 10vh;
+    background-color: rgb(199, 158, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.299);
+}
+header .wrapper{
+    /* background-color: lavenderblush; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+main{
+    height: 90vh;
+    background-color: rgb(227, 211, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    
+}
+main .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap:40px;
+    /* background-color: rgb(176, 159, 125); */
+}
+
+/* Card Component */
+main .wrapper .card-container{
+    height: 150px;
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    transition-duration: 0.7s;
+}
+.bg-color{
+    background-color: rgb(199, 158, 240);
+}
+.bg-transparent{
+    background-color: white;
+}
+
+main .wrapper .card-container .content-container{
+    height: 100%;
+    width: 60%;
+    /* background-color: rgba(0, 255, 255, 0.47); */
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap:15px;
+}
+main .wrapper .card-container .counter-container{
+    height: 100%;
+    width:40%;
+    /* background-color: rgba(2, 36, 36, 0.333); */
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    opacity: 1;
+    transition-duration: 0.9s;
+}
+.counter-container-hidden{
+    opacity: 0;
+}
+main .wrapper .card-container .counter-container p{
+    background-color: gold;
+    padding: 14px;
+    border-radius: 10px;
+}
+main .wrapper .card-container .counter-container .btn{
+    background-color: rgb(155, 155, 155);
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+}
+
+
+
+/* Cart */
+.cart-bucket{
+    height: 100%;
+    width: 100px;
+    background-color: rgb(227, 211, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cart-bucket h1{
+    font-size: 20px;
+}
+.cart-bucket .cart-details-container{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(199, 158, 240);
+    position: absolute;
+    top:100%;
+    right:0px;
+    box-shadow:1px 10px 10px rgba(0, 0, 0, 0.28);
+    opacity: 1;
+    transition-duration: 0.7s;
+}
+.cart-details-container-hidden{
+    opacity: 0;
+    transition-duration: 0.9s;
+}
