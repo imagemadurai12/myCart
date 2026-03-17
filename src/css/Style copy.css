@@ -109,6 +109,7 @@ main .wrapper .card-container .counter-container .btn{
 }
 
 
+
 /* Cart */
 .cart-bucket{
     height: 100%;
@@ -123,21 +124,17 @@ main .wrapper .card-container .counter-container .btn{
     font-size: 20px;
 }
 .cart-bucket .cart-details-container{
-    height: 300px;
+    height: 200px;
     width: 200px;
     background-color: rgb(199, 158, 240);
     position: absolute;
     top:100%;
     right:0px;
     box-shadow:1px 10px 10px rgba(0, 0, 0, 0.28);
+    opacity: 1;
     transition-duration: 0.7s;
-    display: block;
-    padding: 20px;
-}
-.cart-bucket .cart-details-container li{
-    list-style-type: none;
 }
 .cart-details-container-hidden{
-    display: none;
+    opacity: 0;
     transition-duration: 0.9s;
 }

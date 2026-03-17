@@ -29,9 +29,13 @@ export default function Card(props) {
 
       <div className={counterTrigger()}>
         <h2>Quantity</h2>
-        <p className="count-shower">ZERO</p>
-        <button className="btn btn-inc">+</button>
-        <button className="btn btn-dec">-</button>
+        <p className="count-shower">
+          {
+            (props.pDetails.quantity>0?props.pDetails.quantity:"ZERO")
+          }
+        </p>
+        <button className="btn btn-inc" onClick={props.onQuanInc}>+</button>
+        <button className="btn btn-dec" onClick={props.onQuanDec}>-</button>
       </div>
 
     </div>
